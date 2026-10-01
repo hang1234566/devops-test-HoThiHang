@@ -17,7 +17,7 @@ pipeline {
 
         stage('Build') {
             steps {
-                echo 'Cloudflare Workers project - assets are prepared in dist/'
+                bat 'npm run build'
             }
         }
 
