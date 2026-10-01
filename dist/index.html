@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hồ Thị Hằng | Full-Stack Developer</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background: #f5f7fb;
+      color: #172033;
+      line-height: 1.6;
+    }
+
+    .hero {
+      background: linear-gradient(135deg, #182848, #4b6cb7);
+      color: white;
+      padding: 80px 20px 110px;
+      text-align: center;
+    }
+
+    .avatar {
+      width: 120px;
+      height: 120px;
+      margin: 0 auto 20px;
+      border-radius: 50%;
+      background: white;
+      color: #4b6cb7;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 42px;
+      font-weight: bold;
+      box-shadow: 0 10px 30px rgba(0,0,0,.25);
+    }
+
+    .hero h1 {
+      font-size: 42px;
+      margin-bottom: 8px;
+    }
+
+    .hero h2 {
+      font-size: 21px;
+      font-weight: 400;
+      opacity: .9;
+    }
+
+    .container {
+      width: min(1000px, 92%);
+      margin: -55px auto 50px;
+      position: relative;
+    }
+
+    .intro {
+      background: white;
+      padding: 35px;
+      border-radius: 20px;
+      box-shadow: 0 12px 35px rgba(0,0,0,.08);
+      text-align: center;
+      margin-bottom: 25px;
+    }
+
+    .intro p {
+      max-width: 750px;
+      margin: auto;
+      color: #5d6678;
+      font-size: 17px;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 25px;
+    }
+
+    .card {
+      background: white;
+      padding: 30px;
+      border-radius: 18px;
+      box-shadow: 0 8px 25px rgba(0,0,0,.06);
+    }
+
+    .card h3 {
+      margin-bottom: 20px;
+      font-size: 21px;
+      color: #243b6b;
+    }
+
+    .info {
+      display: flex;
+      gap: 15px;
+      margin: 17px 0;
+      align-items: flex-start;
+    }
+
+    .icon {
+      font-size: 23px;
+      min-width: 30px;
+    }
+
+    .label {
+      font-size: 13px;
+      color: #8a93a5;
+      text-transform: uppercase;
+      letter-spacing: .5px;
+    }
+
+    .value {
+      font-weight: 600;
+      color: #202a3d;
+    }
+
+    .skills {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+
+    .skill {
+      padding: 9px 15px;
+      background: #eef3ff;
+      color: #3558a8;
+      border-radius: 30px;
+      font-weight: 600;
+      font-size: 14px;
+    }
+
+    .status {
+      display: inline-block;
+      padding: 8px 15px;
+      background: #e7f8ee;
+      color: #198754;
+      border-radius: 30px;
+      font-weight: bold;
+    }
+
+    .social {
+      margin-top: 25px;
+      text-align: center;
+    }
+
+    .social a {
+      display: inline-block;
+      margin: 5px;
+      padding: 11px 22px;
+      border-radius: 30px;
+      background: #172033;
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      transition: .2s;
+    }
+
+    .social a:hover {
+      transform: translateY(-3px);
+      background: #4b6cb7;
+    }
+
+    footer {
+      text-align: center;
+      color: #8a93a5;
+      padding: 30px;
+      font-size: 14px;
+    }
+
+    @media (max-width: 700px) {
+      .grid {
+        grid-template-columns: 1fr;
+      }
+
+      .hero h1 {
+        font-size: 32px;
+      }
+
+      .intro, .card {
+        padding: 25px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header class="hero">
+    <div class="avatar">H</div>
+    <h1>HỒ THỊ HẰNG</h1>
+    <h2>Full-Stack Developer</h2>
+  </header>
+
+  <main class="container">
+
+    <section class="intro">
+      <p>
+        Sinh viên năm 4 ngành Công nghệ thông tin, đam mê xây dựng
+        các ứng dụng web & mobile hiện đại. Luôn học hỏi và khám phá
+        những công nghệ mới nhất.
+      </p>
+    </section>
+
+    <div class="grid">
+
+      <section class="card">
+        <h3>👤 Thông tin cá nhân</h3>
+
+        <div class="info">
+          <div class="icon">📅</div>
+          <div>
+            <div class="label">Ngày sinh</div>
+            <div class="value">10/02/2004</div>
+          </div>
+        </div>
+
+        <div class="info">
+          <div class="icon">📍</div>
+          <div>
+            <div class="label">Địa chỉ</div>
+            <div class="value">ĐÀ NẴNG, VIỆT NAM</div>
+          </div>
+        </div>
+
+        <div class="info">
+          <div class="icon">📧</div>
+          <div>
+            <div class="label">Email</div>
+            <div class="value">hang106010@donga.edu.VN</div>
+          </div>
+        </div>
+
+        <div class="info">
+          <div class="icon">📞</div>
+          <div>
+            <div class="label">Điện thoại</div>
+            <div class="value">0866743228</div>
+          </div>
+        </div>
+      </section>
+
+      <section class="card">
+        <h3>🎓 Học vấn & nghề nghiệp</h3>
+
+        <div class="info">
+          <div class="icon">🎓</div>
+          <div>
+            <div class="label">Trường học</div>
+            <div class="value">Đại học ĐÔNG Á</div>
+          </div>
+        </div>
+
+        <div class="info">
+          <div class="icon">💼</div>
+          <div>
+            <div class="label">Trạng thái</div>
+            <div class="value">
+              <span class="status">Tìm kiếm việc làm</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="info">
+          <div class="icon">💻</div>
+          <div>
+            <div class="label">Chuyên môn</div>
+            <div class="value">Full-Stack Development</div>
+          </div>
+        </div>
+      </section>
+
+    </div>
+
+    <section class="card" style="margin-top:25px;">
+      <h3>⚡ Kỹ năng</h3>
+
+      <div class="skills">
+        <span class="skill">HTML / CSS</span>
+        <span class="skill">JavaScript</span>
+        <span class="skill">React</span>
+        <span class="skill">React Native</span>
+        <span class="skill">Java</span>
+        <span class="skill">Spring Boot</span>
+        <span class="skill">MySQL</span>
+        <span class="skill">Git</span>
+        <span class="skill">Docker</span>
+      </div>
+    </section>
+
+    <div class="social">
+      <a href="#" target="_blank">GitHub</a>
+      <a href="#" target="_blank">LinkedIn</a>
+    </div>
+
+  </main>
+
+  <footer>
+    © 2026 Hồ Thị Hằng — Full-Stack Developer
+  </footer>
+
+</body>
+</html>
