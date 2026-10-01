@@ -23,7 +23,8 @@ pipeline {
 
         stage('Deploy') {
             steps {
-                sh 'npm run deploy'
+                 sh 'chmod +x node_modules/.bin/wrangler'
+        sh 'npm run deploy'
             }
         }
     }
