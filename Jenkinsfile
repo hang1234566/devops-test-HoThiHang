@@ -9,6 +9,16 @@ pipeline {
 
     stages {
 
+        stage('Telegram Started') {
+            steps {
+                sh '''
+                    curl -s -X POST "https://api.telegram.org/bot${TELEGRAM_BOT_TOKEN}/sendMessage" \
+                    --data-urlencode "chat_id=${TELEGRAM_CHAT_ID}" \
+                    --data-urlencode "text=🔵 STARTED - DevOps Ho Thi Hang%0A%0ABuild: #${BUILD_NUMBER}"
+                '''
+            }
+        }
+
         stage('Checkout') {
             steps {
                 checkout scm
