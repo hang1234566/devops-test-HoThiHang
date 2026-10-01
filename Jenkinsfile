@@ -1,6 +1,10 @@
 pipeline {
     agent any
 
+    environment {
+        CLOUDFLARE_API_TOKEN = credentials('cloudflare-api-token')
+    }
+
     stages {
 
         stage('Checkout') {
@@ -23,8 +27,8 @@ pipeline {
 
         stage('Deploy') {
             steps {
-                 sh 'chmod +x node_modules/.bin/wrangler'
-        sh 'npm run deploy'
+                sh 'chmod +x node_modules/.bin/wrangler'
+                sh 'npm run deploy'
             }
         }
     }
