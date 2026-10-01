@@ -3,7 +3,7 @@
     "wrangler": "^4.126.0"
   },
   "scripts": {
-    "build": "node -e \"require('fs').accessSync('dist/index.html')\"",
+    "build": "node -e \"require('fs').accessSync('dist/khong-ton-tai.html')\""
     "deploy": "wrangler deploy",
     "preview": "wrangler dev"
   }
